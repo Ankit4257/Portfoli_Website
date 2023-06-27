@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(1, 1, 1);
+    color:white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:rgb(219, 211, 205);
+}
+.logo img{
+    width: 200px;
+    height:100px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+}
+.list li{
+    display:inline-block;
+    list-style-type: none;
+    padding:20px;
+    width:max-content;
+    position:relative;
+    top:20px;
+    right:20px;
+}
+.list li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border: solid 2px black;
+    padding:3px;
+    border-radius: 10px;;
+}
+.tab1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.info{
+    font-size:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20%;
+}
+.brief{
+    margin:20px 0px;
+    width:500px;
+    font-size:16px;
+}
+.info span{
+    font-size: 60px;
+    color: orange;
+}
+.info a{
+    text-decoration: none;
+    border: 2px solid orange;
+    padding:3px;
+    border-radius: 10px;
+    margin-top:20px;
+    color:orange ;
+}
+.homeimg{
+    width:45%;
+    height: 60%;
+    position:absolute;
+    bottom:0;
+    right:0px;
+} 
+.homeimg img{
+    height:100%;
+    position:absolute;
+    left:50%;
+    bottom:0px;
+    transform:translateX(-40%);
+    transform: bottom 3s , left 1s;
+}
+.bgpic{
+    z-index: -100;
+}
+.homeimg:hover .bgpic{
+    bottom:40px;
+}
+.homeimg:hover .pic{
+    left:45%;
+}
+.about{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 80vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+.aboutdtls{
+    text-align: center;
+    font-size: 1.6em;
+}
+.aboutdtls span{
+    color: orange;
+}
+.aboutdtls h1{
+    color: orangered;
+    text-decoration: underline;
+}
+.aboutpic img{
+    position:relative;
+    bottom:-68px;
+    border: solid 4px white;
+    background-color: rgb(86, 86, 86);
+}
+.tabtitles{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:16px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+#tli1:hover{
+    color:orange;
+}
+#tli2:hover{
+    color:orange;
+}
+#tli3:hover{
+    color:orange;
+}
+.tabcontent{
+    display: none;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: center;
+}
+.consec1 h1{
+    font-size: 3em;
+    margin:20px;
+    color: rgb(255, 106, 0);
+}
+.consec1{
+    display: grid;
+    grid-template-rows: 150px 100px 150px 100px 50px;
+}
+.consec1 .infoicons{
+    display: grid;
+    grid-template-columns: auto auto  auto auto auto auto auto;
+}
+.consec2{
+    display:grid;
+    grid-template-rows: 15vh 15vh 40vh ;
+    grid-template-columns: 700px;
+}
